@@ -48,6 +48,10 @@ img {
 .link{
     text-decoration: none;
 }
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -133,7 +137,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 94px 0 34px;
+    padding-bottom: 34px;
     column-gap: 8px;
 }
 .buttons_item:not(:last-child){
@@ -161,7 +165,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 94px;
 }
 .cards_item{
     border: 1px solid var(--border-color);
@@ -257,9 +260,6 @@ address{
 }
 
 /* Advantages */
-.advantages{
-    padding: 94px 0;
-}
 .advantages_header{
     display: none;
 }
@@ -322,7 +322,6 @@ address{
     letter-spacing: 0.03em;
     color: var(--main-color);
     font-weight: 700;
-    padding: 94px 0 50px;
 }
 .team_cards{
     display: flex;
@@ -335,7 +334,6 @@ address{
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 94px;
 }
 .team_cards_title{
     font-size: 16px;
