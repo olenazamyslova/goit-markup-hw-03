@@ -40,6 +40,8 @@ ol {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .list{
@@ -87,7 +89,6 @@ header{
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    margin: 0;
     padding: 24px 0 25px 0;
     margin-right: 93px;
     align-items: center;
@@ -110,6 +111,7 @@ header{
     font-size: 14px;
     line-height: 1.14;
     font-weight: 500;
+    display: block;
 }
 .menu_link:hover,
 .menu_link:focus{
@@ -223,7 +225,7 @@ address{
     font-style: normal;
 }
 .f_contacts{
-    column-gap: 9px;
+    margin-bottom: 9px;
 }
 .address_contacts{
     font-size: 14px;
@@ -232,7 +234,7 @@ address{
     color: var(--add-color-4)
 }
 .address_contacts:not(:last-child){
-    column-gap: 9px;
+    margin-bottom: 9px;
 }
 .adr{
     font-size: 14px;
@@ -257,11 +259,10 @@ address{
     width: 695px;
     font-size: 44px;
     line-height: 1.36;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     letter-spacing: 0.06em;
     font-weight: 900;
     text-transform: uppercase;
-    margin-bottom: 30px;
 }
 
 .hero_btn{
@@ -315,10 +316,6 @@ address{
     display: flex;
     column-gap: 30px;
 }
-.work_img_item img{
-    max-width: 100%;
-    height: auto;
-}
 .work_img_item:not(:last-child){
     column-gap: 30px;
 }
@@ -328,7 +325,7 @@ address{
     letter-spacing: 0.03em;
     color: var(--main-color);
     font-weight: 700;
-    padding: 0 0 50px 94px;
+    margin: 50px;
 }
 /* Our team */
 .team{
