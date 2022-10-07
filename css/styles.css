@@ -88,7 +88,8 @@ header{
     line-height: 1.19;
     letter-spacing: 0.03em;
     margin: 0;
-    padding: 24px 93px 25px 0;
+    padding: 24px 0 25px 0;
+    margin-right: 93px;
     align-items: center;
 }
 .logo_span{
@@ -123,7 +124,7 @@ header{
     line-height: 1.14;
     font-weight: 500;
 }
-.contacts_link:first-child{
+.contacts_item:first-child{
     margin-right: 50px;
 }
 .contacts_link:hover,
@@ -133,11 +134,23 @@ header{
 
 /* Portfolio body */
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .buttons{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 34px;
+    margin-bottom: 50px;
     column-gap: 8px;
 }
 .buttons_item:not(:last-child){
@@ -166,8 +179,11 @@ header{
     flex-wrap: wrap;
     gap: 30px;
 }
-.cards_item{
-    border: 1px solid var(--border-color);
+.cards_title_class{
+    padding: 20px 24px;
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
 }
 .cards_title{
     font-weight: 700;
@@ -175,7 +191,7 @@ header{
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-color);
-    padding: 20px 0 4px 24px;
+    margin-bottom: 4px;
 }
 .cards_text{
     font-size: 16px;
@@ -183,18 +199,14 @@ header{
     letter-spacing: 0.03em;
     color: var(--add-color-1);
     font-weight: 400;
-    padding: 0 0 20px 24px;
+    
 }
 
 /* Common footer */
 
 footer{
     background-color: var(--add-bg-color);
-    font-weight: 400;
-    height: 252px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 60px 0;
 }
 .f_logo{
     font-family: 'Raleway',
@@ -210,13 +222,19 @@ footer{
 address{
     font-style: normal;
 }
+.f_contacts{
+    column-gap: 9px;
+}
 .address_contacts{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--add-color-4)
 }
-.address_contacts_adr{
+.address_contacts:not(:last-child){
+    column-gap: 9px;
+}
+.adr{
     font-size: 14px;
     line-height: 1.71; 
     letter-spacing: 0.03em;
@@ -232,6 +250,7 @@ address{
 .hero{
    background-color: var(--add-bg-color); 
    text-align: center;
+   padding: 200px 0;
 }
 .hero_title{
     color: var(--add-color-2);
@@ -242,7 +261,7 @@ address{
     letter-spacing: 0.06em;
     font-weight: 900;
     text-transform: uppercase;
-    padding: 200px 0 30px;
+    margin-bottom: 30px;
 }
 
 .hero_btn{
@@ -256,16 +275,12 @@ address{
     padding: 6px 22px;
     font-weight: 700;
     border-radius: 4px;
-    margin-bottom: 200px;
 }
 
 /* Advantages */
-.advantages_header{
-    display: none;
-}
+
 .ad_list{
     display: flex;
-    align-items: flex-start;
     column-gap: 30px;
 }
 .list_item{
@@ -276,7 +291,7 @@ address{
 }
 .advantages_title{
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-color);
     font-weight: 700;
@@ -294,11 +309,15 @@ address{
 
 .work{
     text-align: center;
+    padding-top: 0;
 }
 .work_img{
     display: flex;
     column-gap: 30px;
-    padding-bottom: 94px;
+}
+.work_img_item img{
+    max-width: 100%;
+    height: auto;
 }
 .work_img_item:not(:last-child){
     column-gap: 30px;
@@ -322,6 +341,7 @@ address{
     letter-spacing: 0.03em;
     color: var(--main-color);
     font-weight: 700;
+    margin-bottom: 50px;
 }
 .team_cards{
     display: flex;
@@ -335,6 +355,9 @@ address{
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+.team_item_text{
+    padding: 30px 0;
+}
 .team_cards_title{
     font-size: 16px;
     line-height: 1.19;
@@ -342,13 +365,12 @@ address{
     color: var(--main-color);
     text-align: center;
     font-weight: 500;
-    padding: 30px 0 10px;
+    margin-bottom: 10px;
 }
 .team_cards_text{
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--add-color-1);  
-    padding: 0 0 10px;
+    color: var(--add-color-1); 
 }
 

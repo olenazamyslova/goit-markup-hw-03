@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Портфоліо</title>
   </head>
@@ -51,8 +58,9 @@
 
     <main>
       <!-- Buttons -->
-      <section class="main_cards section">
-        <h1></h1>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Some content</h1>
         <ul class="buttons list">
           <li class="buttons_item">
             <button class="buttons_btn" type="button">Усі</button>
@@ -70,61 +78,91 @@
             <button class="buttons_btn" type="button">Маркетинг</button>
           </li>
         </ul>
+        
 
         <!-- Cards -->
 
-        <ul class="cards list container">
-          <li class="cards_item">
+        
+          <ul class="cards list">
+             <li class="cards_item">
             <img width="370" height="294" src="images/img_2_1.jpg" alt="#" />
-            <h2 class="cards_title">Технокряк</h2>
+           <div class="cards_title_class">
+             <h2 class="cards_title">Технокряк</h2>
             <p class="cards_text">Веб-сайт</p>
+           </div>
+            
           </li>
           <li class="cards_item">
             <img width="370" height="294" src="images/img_2.2.jpg" alt="#" />
-            <h2 class="cards_title">Постер New Orlean vs Golden Star</h2>
+            <div class="cards_title_class">
+              <h2 class="cards_title">Постер New Orlean vs Golden Star</h2>
             <p class="cards_text">Дизайн</p>
+            </div>
+            
           </li>
           <li class="cards_item">
             <img width="370" height="294" src="images/img_2.3.jpg" alt="#" />
-            <h2 class="cards_title">Ресторан Seafood</h2>
+            <div class="cards_title_class">
+              <h2 class="cards_title">Ресторан Seafood</h2>
             <p class="cards_text">Додаток</p>
+            </div>
+            
           </li>
           <li class="cards_item">
             <img width="370" height="294" src="images/img_2.4.jpg" alt="#" />
-            <h2 class="cards_title">Проєкт Prime</h2>
+            <div class="cards_title_class">
+              <h2 class="cards_title">Проєкт Prime</h2>
             <p class="cards_text">Маркетинг</p>
+            </div>
+            
           </li>
           <li class="cards_item">
             <img width="370" height="294" src="images/img_2.5.jpg" alt="#" />
-            <h2 class="cards_title">Проєкт Boxes</h2>
+            <div class="cards_title_class">
+              <h2 class="cards_title">Проєкт Boxes</h2>
             <p class="cards_text">Додаток</p>
+            </div>
+            
           </li>
           <li class="cards_item">
             <img width="370" height="294" src="images/img_2.6.jpg" alt="#" />
-            <h2 class="cards_title">Inspiration has no Borders</h2>
+            <div class="cards_title_class">
+              <h2 class="cards_title">Inspiration has no Borders</h2>
             <p class="cards_text">Веб-сайт</p>
+            </div>
+            
           </li>
           <li class="cards_item">
             <img width="370" height="294" src="images/img_2.7.jpg" alt="#" />
-            <h2 class="cards_title">Видання Limited Edition</h2>
+            <div class="cards_title_class">
+              <h2 class="cards_title">Видання Limited Edition</h2>
             <p class="cards_text">Дизайн</p>
+            </div>
+            
           </li>
           <li class="cards_item">
             <img width="370" height="294" src="images/img_2.8.jpg" alt="#" />
-            <h2 class="cards_title">Проєкт LAB</h2>
+            <div class="cards_title_class">
+              <h2 class="cards_title">Проєкт LAB</h2>
             <p class="cards_text">Маркетинг</p>
+            </div>
+            
           </li>
           <li class="cards_item">
             <img width="370" height="294" src="images/img_2.9.jpg" alt="#" />
-            <h2 class="cards_title">Growing Business</h2>
+            <div class="cards_title_class">
+              <h2 class="cards_title">Growing Business</h2>
             <p class="cards_text">Додаток</p>
+            </div>
+            
           </li>
         </ul>
+          </div>
       </section>
     </main>
 
     <!-- Footer -->
-        <footer>
+         <footer>
       <div class="container">
         <a class="f_logo link" href="/"
           ><span class="logo_span">Web</span>Studio</a
@@ -133,7 +171,7 @@
           <ul class="f_contacts list">
             <li>
               <a
-                class="address_contacts_adr link"
+                class="address_contacts adr link"
                 href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
                 target="”_blank”"
                 >м. Київ, пр-т Лесі Українки, 26</a
