@@ -224,16 +224,14 @@ footer{
 address{
     font-style: normal;
 }
-.f_contacts{
-    margin-bottom: 9px;
-}
+
 .address_contacts{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--add-color-4)
 }
-.address_contacts:not(:last-child){
+.f_contacts_item:not(:last-child){
     margin-bottom: 9px;
 }
 .adr{
@@ -325,7 +323,7 @@ address{
     letter-spacing: 0.03em;
     color: var(--main-color);
     font-weight: 700;
-    margin: 50px;
+    margin-bottom: 50px;
 }
 /* Our team */
 .team{
